@@ -5,8 +5,12 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular';
+  title = 'Hello World';
+
+  ngOnInit() : void {
+    this.title = "Hello from bridgelabz.";
+  }
 }
